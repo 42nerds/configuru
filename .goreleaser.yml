@@ -13,6 +13,7 @@ builds:
       - linux
       - windows
       - darwin
+    main: ./cmd/configuru/main.go
 archives:
   - replacements:
       darwin: Darwin
@@ -30,3 +31,7 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+release:
+  github:
+    owner: 42nerds
+    name: configuru
