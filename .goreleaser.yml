@@ -35,3 +35,12 @@ release:
   github:
     owner: 42nerds
     name: configuru
+brews:
+  tap:
+    owner: 42nerds
+    name: homebrew-tap
+  commit_author:
+    name: 42nerds-bot
+    email: support@42nerds.com
+  custom_block: |
+      head "https://github.com/42nerds/configurur.git?ref=develop"
