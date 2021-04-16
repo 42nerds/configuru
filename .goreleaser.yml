@@ -36,7 +36,7 @@ release:
     owner: 42nerds
     name: configuru
 brews:
-  tap:
+- tap:
     owner: 42nerds
     name: homebrew-tap
   commit_author:
