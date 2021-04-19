@@ -5,6 +5,8 @@ import (
 	"os"
 	"path/filepath"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestCreate(t *testing.T) {
@@ -27,5 +29,7 @@ func TestCreate(t *testing.T) {
 			t.Errorf("Expected %s file: %s", file, err)
 		}
 	}
-
+	// Test if MkDirAll throws an error by trying to create a directory in root directory
+	_, err = Create("blubb", "/non-existing-directory")
+	assert.Error(t, err)
 }
