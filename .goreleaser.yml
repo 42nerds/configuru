@@ -43,4 +43,4 @@ brews:
     name: 42nerds-bot
     email: support@42nerds.com
   custom_block: |
-      head "https://github.com/42nerds/configurur.git?ref=develop"
+      head "https://github.com/42nerds/configuru.git?ref=develop"
