@@ -1,0 +1,18 @@
+version: v0.0.1
+docString: Be aware of editing this should be done inside the template
+questions:
+- name: age
+  message: How old are you?
+  type: string
+- name: binary
+  message: Can you define you as a binary gender?
+  type: boolean
+- name: gender
+  message: Which gender are you?
+  type: select
+  when:
+  - name: binary
+    is: true
+  selectables:
+  - male
+  - female
